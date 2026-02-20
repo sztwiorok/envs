@@ -28,6 +28,11 @@ jobs:
           name: static-site
           path: dist/
 
+      - name: Setup BDY CLI
+        uses: buddy/setup@v1
+        with:
+          env: dev
+
       - name: Login to Buddy
         uses: buddy/login@v1
         with:
