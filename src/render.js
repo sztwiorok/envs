@@ -22,6 +22,7 @@ export function renderPage(page) {
     <h1>${page.heading}</h1>
     <p>${page.body}</p>
   </main>
+  <footer>Built with Node.js</footer>
 </body>
 </html>`;
 }

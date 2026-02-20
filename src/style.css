@@ -5,29 +5,61 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.6;
-  max-width: 800px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.7;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 2rem;
-  color: #333;
+  padding: 3rem 2rem;
+  color: #1a1a2e;
+  background: linear-gradient(135deg, #f0f0f5 0%, #e8e8f0 100%);
+  min-height: 100vh;
 }
 
 nav {
+  display: flex;
+  gap: 0.5rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #6c63ff;
 }
 
 nav a {
-  color: #0066cc;
+  color: #6c63ff;
   text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: background 0.2s, color 0.2s;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  background: #6c63ff;
+  color: #fff;
+}
+
+main {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(108, 99, 255, 0.1);
 }
 
 h1 {
   margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #16213e;
+  letter-spacing: -0.02em;
+}
+
+p {
+  color: #4a4a6a;
+  font-size: 1.1rem;
+}
+
+footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: #8888aa;
+  font-size: 0.85rem;
 }
