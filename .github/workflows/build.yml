@@ -32,13 +32,13 @@ jobs:
         uses: buddy/login@v1
         with:
           token: ${{ secrets.BUDDY_TOKEN }}
-          region: ${{ vars.BUDDY_REGION }}
+          region: US
 
       - name: Publish package
         uses: buddy/pkg-publish@v1
         with:
-          workspace: ${{ vars.BUDDY_WORKSPACE }}
-          project: ${{ vars.BUDDY_PROJECT }}
-          identifier: static-site@${{ github.ref_name }}
+          workspace: myplayground
+          project: envs
+          identifier: my-site@${{ github.ref_name }}
           directory: ./dist
           create: true
