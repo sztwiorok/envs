@@ -1,0 +1,11 @@
+{
+  "name": "static-site",
+  "version": "1.0.0",
+  "description": "Simple static site generator",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "test": "node --test"
+  },
+  "devDependencies": {}
+}
